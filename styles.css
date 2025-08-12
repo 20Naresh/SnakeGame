@@ -1,0 +1,20 @@
+
+:root{
+  --bg:#0f1720;
+  --panel:#111521;
+  --accent:#00d1c1;
+  --muted:#9aa3b2;
+  --dot-size:14px;
+}
+*{box-sizing:border-box}
+html,body,#app{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#081018);color:#e6eef6;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+h1{margin:0;font-size:18px;letter-spacing:1px}
+.controls button{margin-left:8px;padding:8px 10px;border-radius:8px;border:none;background:#16202b;color:#fff;cursor:pointer}
+main{display:flex;flex-direction:column;align-items:center;padding:12px}
+canvas#game{background:linear-gradient(180deg,#08121a,#071018);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6);touch-action:none}
+#hud{display:flex;gap:18px;margin-top:12px;font-size:15px;color:var(--muted)}
+#touchControls{margin-top:12px}
+#touchControls.hidden{display:none}
+#touchControls button{width:56px;height:46px;margin:6px;border-radius:8px;border:none;background:#14232b;color:#fff;font-size:20px}
+footer{padding:10px 18px;color:var(--muted);font-size:13px}
